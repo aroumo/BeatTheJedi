@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17420A2F1F20B3A50011C4E5 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17420A2E1F20B3A50011C4E5 /* Starjedi.ttf */; };
+		17420A321F20B7E90011C4E5 /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A301F20B7E90011C4E5 /* mute.png */; };
+		17420A331F20B7E90011C4E5 /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A311F20B7E90011C4E5 /* volume.png */; };
+		17420A371F20DD780011C4E5 /* MaintTheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17420A361F20DD780011C4E5 /* MaintTheme.mp3 */; };
+		17420A3F1F20E08B0011C4E5 /* yodaback.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A3D1F20E08B0011C4E5 /* yodaback.png */; };
+		17420A411F20E5E30011C4E5 /* ViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17420A401F20E5E30011C4E5 /* ViewMenu.swift */; };
+		17420A431F20EFD20011C4E5 /* shipbackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 17420A421F20EFD20011C4E5 /* shipbackground.jpeg */; };
+		17420A451F20F0580011C4E5 /* survivelink.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A441F20F0580011C4E5 /* survivelink.png */; };
 		178E9A131F1F885E00B3F12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E9A121F1F885E00B3F12B /* AppDelegate.swift */; };
-		178E9A151F1F885E00B3F12B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E9A141F1F885E00B3F12B /* ViewController.swift */; };
 		178E9A181F1F885E00B3F12B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A161F1F885E00B3F12B /* Main.storyboard */; };
 		178E9A1A1F1F885E00B3F12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A191F1F885E00B3F12B /* Assets.xcassets */; };
 		178E9A1D1F1F885E00B3F12B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A1B1F1F885E00B3F12B /* LaunchScreen.storyboard */; };
+		178E9A331F1F992700B3F12B /* star_jedi in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A321F1F992700B3F12B /* star_jedi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17420A2E1F20B3A50011C4E5 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjedi.ttf; path = ../../Documents/Starjedi.ttf; sourceTree = "<group>"; };
+		17420A301F20B7E90011C4E5 /* mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mute.png; path = "../../../Downloads/my-icons-collection 2/png/mute.png"; sourceTree = "<group>"; };
+		17420A311F20B7E90011C4E5 /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = volume.png; path = "../../../Downloads/my-icons-collection 2/png/volume.png"; sourceTree = "<group>"; };
+		17420A361F20DD780011C4E5 /* MaintTheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = MaintTheme.mp3; path = ../../../Downloads/MaintTheme.mp3; sourceTree = "<group>"; };
+		17420A3D1F20E08B0011C4E5 /* yodaback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yodaback.png; path = ../../../Downloads/yodaback.png; sourceTree = "<group>"; };
+		17420A401F20E5E30011C4E5 /* ViewMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenu.swift; sourceTree = "<group>"; };
+		17420A421F20EFD20011C4E5 /* shipbackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shipbackground.jpeg; path = ../../../Downloads/shipbackground.jpeg; sourceTree = "<group>"; };
+		17420A441F20F0580011C4E5 /* survivelink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = survivelink.png; path = ../../../Downloads/survivelink.png; sourceTree = "<group>"; };
 		178E9A0F1F1F885E00B3F12B /* BeatTheJedi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatTheJedi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		178E9A121F1F885E00B3F12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		178E9A141F1F885E00B3F12B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		178E9A171F1F885E00B3F12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		178E9A191F1F885E00B3F12B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		178E9A1C1F1F885E00B3F12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		178E9A1E1F1F885E00B3F12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		178E9A321F1F992700B3F12B /* star_jedi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = star_jedi; path = ../../../Downloads/star_jedi; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,7 @@
 		178E9A061F1F885D00B3F12B = {
 			isa = PBXGroup;
 			children = (
+				17420A2E1F20B3A50011C4E5 /* Starjedi.ttf */,
 				178E9A111F1F885E00B3F12B /* BeatTheJedi */,
 				178E9A101F1F885E00B3F12B /* Products */,
 			);
@@ -54,14 +71,29 @@
 		178E9A111F1F885E00B3F12B /* BeatTheJedi */ = {
 			isa = PBXGroup;
 			children = (
+				178E9A2D1F1F978B00B3F12B /* Ressources */,
 				178E9A121F1F885E00B3F12B /* AppDelegate.swift */,
-				178E9A141F1F885E00B3F12B /* ViewController.swift */,
+				17420A401F20E5E30011C4E5 /* ViewMenu.swift */,
 				178E9A161F1F885E00B3F12B /* Main.storyboard */,
 				178E9A191F1F885E00B3F12B /* Assets.xcassets */,
 				178E9A1B1F1F885E00B3F12B /* LaunchScreen.storyboard */,
 				178E9A1E1F1F885E00B3F12B /* Info.plist */,
 			);
 			path = BeatTheJedi;
+			sourceTree = "<group>";
+		};
+		178E9A2D1F1F978B00B3F12B /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				17420A441F20F0580011C4E5 /* survivelink.png */,
+				17420A421F20EFD20011C4E5 /* shipbackground.jpeg */,
+				17420A3D1F20E08B0011C4E5 /* yodaback.png */,
+				17420A361F20DD780011C4E5 /* MaintTheme.mp3 */,
+				17420A301F20B7E90011C4E5 /* mute.png */,
+				17420A311F20B7E90011C4E5 /* volume.png */,
+				178E9A321F1F992700B3F12B /* star_jedi */,
+			);
+			name = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,12 +122,17 @@
 		178E9A071F1F885E00B3F12B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					mute,
+					volume,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Vinod Aroumougame";
 				TargetAttributes = {
 					178E9A0E1F1F885E00B3F12B = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = R6VFQU9BT6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +160,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17420A371F20DD780011C4E5 /* MaintTheme.mp3 in Resources */,
+				17420A2F1F20B3A50011C4E5 /* Starjedi.ttf in Resources */,
 				178E9A1D1F1F885E00B3F12B /* LaunchScreen.storyboard in Resources */,
 				178E9A1A1F1F885E00B3F12B /* Assets.xcassets in Resources */,
+				17420A331F20B7E90011C4E5 /* volume.png in Resources */,
+				17420A431F20EFD20011C4E5 /* shipbackground.jpeg in Resources */,
 				178E9A181F1F885E00B3F12B /* Main.storyboard in Resources */,
+				178E9A331F1F992700B3F12B /* star_jedi in Resources */,
+				17420A321F20B7E90011C4E5 /* mute.png in Resources */,
+				17420A3F1F20E08B0011C4E5 /* yodaback.png in Resources */,
+				17420A451F20F0580011C4E5 /* survivelink.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				178E9A151F1F885E00B3F12B /* ViewController.swift in Sources */,
 				178E9A131F1F885E00B3F12B /* AppDelegate.swift in Sources */,
+				17420A411F20E5E30011C4E5 /* ViewMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6VFQU9BT6;
 				INFOPLIST_FILE = BeatTheJedi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.BeatTheJedi;
@@ -274,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6VFQU9BT6;
 				INFOPLIST_FILE = BeatTheJedi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.companyname.BeatTheJedi;
@@ -301,6 +348,7 @@
 				178E9A231F1F885E00B3F12B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
