@@ -33,6 +33,9 @@ class ViewMenu: UIViewController {
             playBackgroundMusic(filename: "MaintTheme", command: 1)
         }
     }
+    @IBAction func notavailable(_ sender: UIButton) {
+        
+    }
 }
 
 var backgroundMusicPlayer: AVAudioPlayer!

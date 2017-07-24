@@ -15,6 +15,10 @@
 		17420A411F20E5E30011C4E5 /* ViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17420A401F20E5E30011C4E5 /* ViewMenu.swift */; };
 		17420A431F20EFD20011C4E5 /* shipbackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 17420A421F20EFD20011C4E5 /* shipbackground.jpeg */; };
 		17420A451F20F0580011C4E5 /* survivelink.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A441F20F0580011C4E5 /* survivelink.png */; };
+		17420A471F2103D20011C4E5 /* windu-chapter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17420A461F2103D20011C4E5 /* windu-chapter.jpg */; };
+		17420A4A1F2103DB0011C4E5 /* Obi-Wan-chapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A481F2103DB0011C4E5 /* Obi-Wan-chapter.png */; };
+		17420A4B1F2103DB0011C4E5 /* yoda-chapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A491F2103DB0011C4E5 /* yoda-chapter.png */; };
+		17420A4D1F2105300011C4E5 /* histoire-menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17420A4C1F2105300011C4E5 /* histoire-menu.jpg */; };
 		178E9A131F1F885E00B3F12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E9A121F1F885E00B3F12B /* AppDelegate.swift */; };
 		178E9A181F1F885E00B3F12B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A161F1F885E00B3F12B /* Main.storyboard */; };
 		178E9A1A1F1F885E00B3F12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A191F1F885E00B3F12B /* Assets.xcassets */; };
@@ -31,6 +35,10 @@
 		17420A401F20E5E30011C4E5 /* ViewMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMenu.swift; sourceTree = "<group>"; };
 		17420A421F20EFD20011C4E5 /* shipbackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shipbackground.jpeg; path = ../../../Downloads/shipbackground.jpeg; sourceTree = "<group>"; };
 		17420A441F20F0580011C4E5 /* survivelink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = survivelink.png; path = ../../../Downloads/survivelink.png; sourceTree = "<group>"; };
+		17420A461F2103D20011C4E5 /* windu-chapter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "windu-chapter.jpg"; path = "../../windu-chapter.jpg"; sourceTree = "<group>"; };
+		17420A481F2103DB0011C4E5 /* Obi-Wan-chapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Obi-Wan-chapter.png"; path = "../../Obi-Wan-chapter.png"; sourceTree = "<group>"; };
+		17420A491F2103DB0011C4E5 /* yoda-chapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yoda-chapter.png"; path = "../../yoda-chapter.png"; sourceTree = "<group>"; };
+		17420A4C1F2105300011C4E5 /* histoire-menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "histoire-menu.jpg"; path = "../../histoire-menu.jpg"; sourceTree = "<group>"; };
 		178E9A0F1F1F885E00B3F12B /* BeatTheJedi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatTheJedi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		178E9A121F1F885E00B3F12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		178E9A171F1F885E00B3F12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +93,10 @@
 		178E9A2D1F1F978B00B3F12B /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				17420A4C1F2105300011C4E5 /* histoire-menu.jpg */,
+				17420A481F2103DB0011C4E5 /* Obi-Wan-chapter.png */,
+				17420A491F2103DB0011C4E5 /* yoda-chapter.png */,
+				17420A461F2103D20011C4E5 /* windu-chapter.jpg */,
 				17420A441F20F0580011C4E5 /* survivelink.png */,
 				17420A421F20EFD20011C4E5 /* shipbackground.jpeg */,
 				17420A3D1F20E08B0011C4E5 /* yodaback.png */,
@@ -160,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17420A4B1F2103DB0011C4E5 /* yoda-chapter.png in Resources */,
 				17420A371F20DD780011C4E5 /* MaintTheme.mp3 in Resources */,
 				17420A2F1F20B3A50011C4E5 /* Starjedi.ttf in Resources */,
 				178E9A1D1F1F885E00B3F12B /* LaunchScreen.storyboard in Resources */,
@@ -167,10 +180,13 @@
 				17420A331F20B7E90011C4E5 /* volume.png in Resources */,
 				17420A431F20EFD20011C4E5 /* shipbackground.jpeg in Resources */,
 				178E9A181F1F885E00B3F12B /* Main.storyboard in Resources */,
+				17420A471F2103D20011C4E5 /* windu-chapter.jpg in Resources */,
 				178E9A331F1F992700B3F12B /* star_jedi in Resources */,
 				17420A321F20B7E90011C4E5 /* mute.png in Resources */,
+				17420A4D1F2105300011C4E5 /* histoire-menu.jpg in Resources */,
 				17420A3F1F20E08B0011C4E5 /* yodaback.png in Resources */,
 				17420A451F20F0580011C4E5 /* survivelink.png in Resources */,
+				17420A4A1F2103DB0011C4E5 /* Obi-Wan-chapter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

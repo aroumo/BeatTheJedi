@@ -31,19 +31,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gm-l2-pMh">
-                                <rect key="frame" x="127" y="478" width="120" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
-                                <state key="normal" title="Paramètre">
-                                    <color key="titleColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BcF-HY-De0" kind="show" id="42u-Jq-jun"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myh-VF-aRl">
-                                <rect key="frame" x="127" y="342" width="120" height="60"/>
+                                <rect key="frame" x="127" y="410" width="120" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                 <state key="normal" title="Histoire">
@@ -55,14 +44,6 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPU-J0-56Z">
-                                <rect key="frame" x="127" y="546" width="120" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
-                                <state key="normal" title="Quitter">
-                                    <color key="titleColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCM-E6-aln">
                                 <rect key="frame" x="16" y="621" width="26" height="26"/>
                                 <accessibility key="accessibilityConfiguration" identifier="volumeButton"/>
@@ -72,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slt-eC-uUt">
-                                <rect key="frame" x="127" y="410" width="120" height="60"/>
+                                <rect key="frame" x="127" y="478" width="120" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                 <state key="normal" title="Survie">
@@ -80,6 +61,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="Kzj-af-Abv" kind="show" id="aRe-VX-uk0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gm-l2-pMh">
+                                <rect key="frame" x="127" y="546" width="120" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <state key="normal" title="Paramètre">
+                                    <color key="titleColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="notavailable:" destination="aGL-Wu-W9B" eventType="touchUpInside" id="zOQ-oN-Jqn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,24 +89,6 @@
             <point key="canvasLocation" x="1005.6" y="138.98050974512745"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="LxH-c7-Q8G">
-            <objects>
-                <viewController id="BcF-HY-De0" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia5-Ig-fR9"/>
-                        <viewControllerLayoutGuide type="bottom" id="NDR-ow-wLa"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Lyy-G2-KNY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OB2-Yc-r1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1006" y="874"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="BBn-CK-Y6c">
             <objects>
                 <viewController id="QCz-01-N7D" sceneMemberID="viewController">
@@ -125,12 +99,81 @@
                     <view key="view" contentMode="scaleToFill" id="la2-ob-hqK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="histoire-menu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YDS-7d-Dfr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-zy-fwk">
+                                <rect key="frame" x="16" y="77" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Obi-Wan-chapter.png"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="2TG-bP-Rv4" kind="show" id="Tit-p3-K0c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-7a-qkd">
+                                <rect key="frame" x="16" y="256" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="yoda-chapter.png"/>
+                                <connections>
+                                    <segue destination="2TG-bP-Rv4" kind="show" id="ico-jJ-7Ai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-Io-4ZR">
+                                <rect key="frame" x="16" y="20" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="aGL-Wu-W9B" kind="show" id="WKA-e4-w4O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRh-my-LBG">
+                                <rect key="frame" x="204" y="77" width="155" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="windu-chapter.jpg"/>
+                                <connections>
+                                    <segue destination="2TG-bP-Rv4" kind="show" id="NpO-Zv-muB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quel jedi osez-vous affronter " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahJ-d3-Kw2">
+                                <rect key="frame" x="16" y="570" width="343" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctR-sr-uhz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2177" y="-223"/>
+            <point key="canvasLocation" x="2176.8000000000002" y="-223.53823088455775"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6n9-Qe-GCT">
+            <objects>
+                <viewController id="2TG-bP-Rv4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pGb-Gq-x0G"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dl6-CH-D4A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3SR-oU-e0K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLz-u9-nsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3097" y="-224"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="trX-lq-p7G">
@@ -155,6 +198,20 @@
                                 <state key="normal" title="Cliquez ici pour continuer">
                                     <color key="titleColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wrX-yn-K3e" kind="show" id="r3i-Mw-hCw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-ai-5He">
+                                <rect key="frame" x="16" y="28" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aGL-Wu-W9B" kind="show" id="liA-ve-RvD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -164,10 +221,36 @@
             </objects>
             <point key="canvasLocation" x="2176.8000000000002" y="520.38980509745136"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2aY-fQ-6mG">
+            <objects>
+                <viewController id="wrX-yn-K3e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bn8-lq-yl7"/>
+                        <viewControllerLayoutGuide type="bottom" id="3a3-qk-RrS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7bc-OQ-mMm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JnI-ms-WvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3097" y="520"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Obi-Wan-chapter.png" width="512" height="512"/>
+        <image name="histoire-menu.jpg" width="1080" height="1920"/>
         <image name="shipbackground.jpeg" width="1242" height="2208"/>
         <image name="survivelink.png" width="576" height="1024"/>
         <image name="volume.png" width="64" height="64"/>
+        <image name="windu-chapter.jpg" width="300" height="303"/>
+        <image name="yoda-chapter.png" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ico-jJ-7Ai"/>
+        <segue reference="liA-ve-RvD"/>
+    </inferredMetricsTieBreakers>
 </document>
