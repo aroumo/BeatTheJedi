@@ -19,6 +19,8 @@
 		17420A4A1F2103DB0011C4E5 /* Obi-Wan-chapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A481F2103DB0011C4E5 /* Obi-Wan-chapter.png */; };
 		17420A4B1F2103DB0011C4E5 /* yoda-chapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A491F2103DB0011C4E5 /* yoda-chapter.png */; };
 		17420A4D1F2105300011C4E5 /* histoire-menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17420A4C1F2105300011C4E5 /* histoire-menu.jpg */; };
+		17420A4F1F2641F00011C4E5 /* SurvieGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17420A4E1F2641F00011C4E5 /* SurvieGame.swift */; };
+		17420A511F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17420A501F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg */; };
 		178E9A131F1F885E00B3F12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E9A121F1F885E00B3F12B /* AppDelegate.swift */; };
 		178E9A181F1F885E00B3F12B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A161F1F885E00B3F12B /* Main.storyboard */; };
 		178E9A1A1F1F885E00B3F12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A191F1F885E00B3F12B /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		17420A481F2103DB0011C4E5 /* Obi-Wan-chapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Obi-Wan-chapter.png"; path = "../../Obi-Wan-chapter.png"; sourceTree = "<group>"; };
 		17420A491F2103DB0011C4E5 /* yoda-chapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yoda-chapter.png"; path = "../../yoda-chapter.png"; sourceTree = "<group>"; };
 		17420A4C1F2105300011C4E5 /* histoire-menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "histoire-menu.jpg"; path = "../../histoire-menu.jpg"; sourceTree = "<group>"; };
+		17420A4E1F2641F00011C4E5 /* SurvieGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurvieGame.swift; sourceTree = "<group>"; };
+		17420A501F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "forme-carre-noir_318-40462.jpg"; path = "../../forme-carre-noir_318-40462.jpg"; sourceTree = "<group>"; };
 		178E9A0F1F1F885E00B3F12B /* BeatTheJedi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatTheJedi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		178E9A121F1F885E00B3F12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		178E9A171F1F885E00B3F12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 				178E9A121F1F885E00B3F12B /* AppDelegate.swift */,
 				17420A401F20E5E30011C4E5 /* ViewMenu.swift */,
 				178E9A161F1F885E00B3F12B /* Main.storyboard */,
+				17420A4E1F2641F00011C4E5 /* SurvieGame.swift */,
 				178E9A191F1F885E00B3F12B /* Assets.xcassets */,
 				178E9A1B1F1F885E00B3F12B /* LaunchScreen.storyboard */,
 				178E9A1E1F1F885E00B3F12B /* Info.plist */,
@@ -97,6 +102,7 @@
 				17420A481F2103DB0011C4E5 /* Obi-Wan-chapter.png */,
 				17420A491F2103DB0011C4E5 /* yoda-chapter.png */,
 				17420A461F2103D20011C4E5 /* windu-chapter.jpg */,
+				17420A501F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg */,
 				17420A441F20F0580011C4E5 /* survivelink.png */,
 				17420A421F20EFD20011C4E5 /* shipbackground.jpeg */,
 				17420A3D1F20E08B0011C4E5 /* yodaback.png */,
@@ -185,6 +191,7 @@
 				17420A321F20B7E90011C4E5 /* mute.png in Resources */,
 				17420A4D1F2105300011C4E5 /* histoire-menu.jpg in Resources */,
 				17420A3F1F20E08B0011C4E5 /* yodaback.png in Resources */,
+				17420A511F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg in Resources */,
 				17420A451F20F0580011C4E5 /* survivelink.png in Resources */,
 				17420A4A1F2103DB0011C4E5 /* Obi-Wan-chapter.png in Resources */,
 			);
@@ -199,6 +206,7 @@
 			files = (
 				178E9A131F1F885E00B3F12B /* AppDelegate.swift in Sources */,
 				17420A411F20E5E30011C4E5 /* ViewMenu.swift in Sources */,
+				17420A4F1F2641F00011C4E5 /* SurvieGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

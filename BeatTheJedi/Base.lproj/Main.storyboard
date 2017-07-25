@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="2176.8000000000002" y="520.38980509745136"/>
         </scene>
-        <!--View Controller-->
+        <!--Survie Game-->
         <scene sceneID="2aY-fQ-6mG">
             <objects>
-                <viewController id="wrX-yn-K3e" sceneMemberID="viewController">
+                <viewController id="wrX-yn-K3e" customClass="SurvieGame" customModule="BeatTheJedi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bn8-lq-yl7"/>
                         <viewControllerLayoutGuide type="bottom" id="3a3-qk-RrS"/>
@@ -232,16 +232,28 @@
                     <view key="view" contentMode="scaleToFill" id="7bc-OQ-mMm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forme-carre-noir_318-40462.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u2q-ep-J9k">
+                                <rect key="frame" x="135" y="552" width="105" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Player" destination="u2q-ep-J9k" id="puz-vo-uZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnI-ms-WvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3097" y="520"/>
+            <point key="canvasLocation" x="3096.8000000000002" y="519.49025487256381"/>
         </scene>
     </scenes>
     <resources>
         <image name="Obi-Wan-chapter.png" width="512" height="512"/>
+        <image name="forme-carre-noir_318-40462.jpg" width="626" height="626"/>
         <image name="histoire-menu.jpg" width="1080" height="1920"/>
         <image name="shipbackground.jpeg" width="1242" height="2208"/>
         <image name="survivelink.png" width="576" height="1024"/>
