@@ -21,6 +21,19 @@
 		17420A4D1F2105300011C4E5 /* histoire-menu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17420A4C1F2105300011C4E5 /* histoire-menu.jpg */; };
 		17420A4F1F2641F00011C4E5 /* SurvieGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17420A4E1F2641F00011C4E5 /* SurvieGame.swift */; };
 		17420A511F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17420A501F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg */; };
+		17420A531F28CD280011C4E5 /* mainlasershot.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A521F28CD280011C4E5 /* mainlasershot.png */; };
+		17420A551F28DBE80011C4E5 /* troopers2.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A541F28DBE80011C4E5 /* troopers2.png */; };
+		17420A5A1F28DDE00011C4E5 /* troopers3.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A561F28DDE00011C4E5 /* troopers3.png */; };
+		17420A5B1F28DDE00011C4E5 /* troopers4.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A571F28DDE00011C4E5 /* troopers4.png */; };
+		17420A5C1F28DDE00011C4E5 /* troopers5.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A581F28DDE00011C4E5 /* troopers5.png */; };
+		17420A5D1F28DDE00011C4E5 /* troopers6.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A591F28DDE00011C4E5 /* troopers6.png */; };
+		17420A5F1F28DE880011C4E5 /* troopers1.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A5E1F28DE880011C4E5 /* troopers1.png */; };
+		17420A661F28E8CF0011C4E5 /* Ennemies5.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A601F28E8CF0011C4E5 /* Ennemies5.png */; };
+		17420A671F28E8CF0011C4E5 /* Ennemies4.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A611F28E8CF0011C4E5 /* Ennemies4.png */; };
+		17420A681F28E8CF0011C4E5 /* Ennemies6.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A621F28E8CF0011C4E5 /* Ennemies6.png */; };
+		17420A691F28E8CF0011C4E5 /* Ennemies2.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A631F28E8CF0011C4E5 /* Ennemies2.png */; };
+		17420A6A1F28E8CF0011C4E5 /* Ennemies1.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A641F28E8CF0011C4E5 /* Ennemies1.png */; };
+		17420A6B1F28E8CF0011C4E5 /* Ennemies3.png in Resources */ = {isa = PBXBuildFile; fileRef = 17420A651F28E8CF0011C4E5 /* Ennemies3.png */; };
 		178E9A131F1F885E00B3F12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E9A121F1F885E00B3F12B /* AppDelegate.swift */; };
 		178E9A181F1F885E00B3F12B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A161F1F885E00B3F12B /* Main.storyboard */; };
 		178E9A1A1F1F885E00B3F12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178E9A191F1F885E00B3F12B /* Assets.xcassets */; };
@@ -43,6 +56,19 @@
 		17420A4C1F2105300011C4E5 /* histoire-menu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "histoire-menu.jpg"; path = "../../histoire-menu.jpg"; sourceTree = "<group>"; };
 		17420A4E1F2641F00011C4E5 /* SurvieGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurvieGame.swift; sourceTree = "<group>"; };
 		17420A501F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "forme-carre-noir_318-40462.jpg"; path = "../../forme-carre-noir_318-40462.jpg"; sourceTree = "<group>"; };
+		17420A521F28CD280011C4E5 /* mainlasershot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainlasershot.png; path = ../../mainlasershot.png; sourceTree = "<group>"; };
+		17420A541F28DBE80011C4E5 /* troopers2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = troopers2.png; path = ../../troopers2.png; sourceTree = "<group>"; };
+		17420A561F28DDE00011C4E5 /* troopers3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = troopers3.png; path = ../../troopers3.png; sourceTree = "<group>"; };
+		17420A571F28DDE00011C4E5 /* troopers4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = troopers4.png; path = ../../troopers4.png; sourceTree = "<group>"; };
+		17420A581F28DDE00011C4E5 /* troopers5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = troopers5.png; path = ../../troopers5.png; sourceTree = "<group>"; };
+		17420A591F28DDE00011C4E5 /* troopers6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = troopers6.png; path = ../../troopers6.png; sourceTree = "<group>"; };
+		17420A5E1F28DE880011C4E5 /* troopers1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = troopers1.png; path = ../../troopers1.png; sourceTree = "<group>"; };
+		17420A601F28E8CF0011C4E5 /* Ennemies5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ennemies5.png; path = ../../../Downloads/Ennemies5.png; sourceTree = "<group>"; };
+		17420A611F28E8CF0011C4E5 /* Ennemies4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ennemies4.png; path = ../../../Downloads/Ennemies4.png; sourceTree = "<group>"; };
+		17420A621F28E8CF0011C4E5 /* Ennemies6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ennemies6.png; path = ../../../Downloads/Ennemies6.png; sourceTree = "<group>"; };
+		17420A631F28E8CF0011C4E5 /* Ennemies2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ennemies2.png; path = ../../../Downloads/Ennemies2.png; sourceTree = "<group>"; };
+		17420A641F28E8CF0011C4E5 /* Ennemies1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ennemies1.png; path = ../../../Downloads/Ennemies1.png; sourceTree = "<group>"; };
+		17420A651F28E8CF0011C4E5 /* Ennemies3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ennemies3.png; path = ../../../Downloads/Ennemies3.png; sourceTree = "<group>"; };
 		178E9A0F1F1F885E00B3F12B /* BeatTheJedi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatTheJedi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		178E9A121F1F885E00B3F12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		178E9A171F1F885E00B3F12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +124,7 @@
 		178E9A2D1F1F978B00B3F12B /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				17420A521F28CD280011C4E5 /* mainlasershot.png */,
 				17420A4C1F2105300011C4E5 /* histoire-menu.jpg */,
 				17420A481F2103DB0011C4E5 /* Obi-Wan-chapter.png */,
 				17420A491F2103DB0011C4E5 /* yoda-chapter.png */,
@@ -105,6 +132,18 @@
 				17420A501F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg */,
 				17420A441F20F0580011C4E5 /* survivelink.png */,
 				17420A421F20EFD20011C4E5 /* shipbackground.jpeg */,
+				17420A5E1F28DE880011C4E5 /* troopers1.png */,
+				17420A541F28DBE80011C4E5 /* troopers2.png */,
+				17420A601F28E8CF0011C4E5 /* Ennemies5.png */,
+				17420A611F28E8CF0011C4E5 /* Ennemies4.png */,
+				17420A621F28E8CF0011C4E5 /* Ennemies6.png */,
+				17420A631F28E8CF0011C4E5 /* Ennemies2.png */,
+				17420A641F28E8CF0011C4E5 /* Ennemies1.png */,
+				17420A651F28E8CF0011C4E5 /* Ennemies3.png */,
+				17420A561F28DDE00011C4E5 /* troopers3.png */,
+				17420A571F28DDE00011C4E5 /* troopers4.png */,
+				17420A581F28DDE00011C4E5 /* troopers5.png */,
+				17420A591F28DDE00011C4E5 /* troopers6.png */,
 				17420A3D1F20E08B0011C4E5 /* yodaback.png */,
 				17420A361F20DD780011C4E5 /* MaintTheme.mp3 */,
 				17420A301F20B7E90011C4E5 /* mute.png */,
@@ -180,19 +219,32 @@
 			files = (
 				17420A4B1F2103DB0011C4E5 /* yoda-chapter.png in Resources */,
 				17420A371F20DD780011C4E5 /* MaintTheme.mp3 in Resources */,
+				17420A5B1F28DDE00011C4E5 /* troopers4.png in Resources */,
 				17420A2F1F20B3A50011C4E5 /* Starjedi.ttf in Resources */,
+				17420A5D1F28DDE00011C4E5 /* troopers6.png in Resources */,
+				17420A6A1F28E8CF0011C4E5 /* Ennemies1.png in Resources */,
 				178E9A1D1F1F885E00B3F12B /* LaunchScreen.storyboard in Resources */,
 				178E9A1A1F1F885E00B3F12B /* Assets.xcassets in Resources */,
 				17420A331F20B7E90011C4E5 /* volume.png in Resources */,
 				17420A431F20EFD20011C4E5 /* shipbackground.jpeg in Resources */,
 				178E9A181F1F885E00B3F12B /* Main.storyboard in Resources */,
 				17420A471F2103D20011C4E5 /* windu-chapter.jpg in Resources */,
+				17420A691F28E8CF0011C4E5 /* Ennemies2.png in Resources */,
+				17420A671F28E8CF0011C4E5 /* Ennemies4.png in Resources */,
+				17420A5A1F28DDE00011C4E5 /* troopers3.png in Resources */,
 				178E9A331F1F992700B3F12B /* star_jedi in Resources */,
+				17420A681F28E8CF0011C4E5 /* Ennemies6.png in Resources */,
+				17420A551F28DBE80011C4E5 /* troopers2.png in Resources */,
+				17420A531F28CD280011C4E5 /* mainlasershot.png in Resources */,
 				17420A321F20B7E90011C4E5 /* mute.png in Resources */,
 				17420A4D1F2105300011C4E5 /* histoire-menu.jpg in Resources */,
+				17420A661F28E8CF0011C4E5 /* Ennemies5.png in Resources */,
+				17420A5C1F28DDE00011C4E5 /* troopers5.png in Resources */,
 				17420A3F1F20E08B0011C4E5 /* yodaback.png in Resources */,
 				17420A511F2645D00011C4E5 /* forme-carre-noir_318-40462.jpg in Resources */,
 				17420A451F20F0580011C4E5 /* survivelink.png in Resources */,
+				17420A5F1F28DE880011C4E5 /* troopers1.png in Resources */,
+				17420A6B1F28E8CF0011C4E5 /* Ennemies3.png in Resources */,
 				17420A4A1F2103DB0011C4E5 /* Obi-Wan-chapter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

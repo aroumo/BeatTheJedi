@@ -233,17 +233,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forme-carre-noir_318-40462.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="u2q-ep-J9k">
-                                <rect key="frame" x="135" y="552" width="105" height="95"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="troopers2.png" translatesAutoresizingMaskIntoConstraints="NO" id="u2q-ep-J9k">
+                                <rect key="frame" x="170" y="564" width="34" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5O-mJ-rYO">
+                                <rect key="frame" x="16" y="637" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt9-cS-c1E">
+                                <rect key="frame" x="95" y="636" width="39" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.84313725490000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="Player" destination="u2q-ep-J9k" id="puz-vo-uZC"/>
+                        <outlet property="Score" destination="Xt9-cS-c1E" id="jyJ-6K-xXV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnI-ms-WvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,10 +266,10 @@
     </scenes>
     <resources>
         <image name="Obi-Wan-chapter.png" width="512" height="512"/>
-        <image name="forme-carre-noir_318-40462.jpg" width="626" height="626"/>
         <image name="histoire-menu.jpg" width="1080" height="1920"/>
         <image name="shipbackground.jpeg" width="1242" height="2208"/>
         <image name="survivelink.png" width="576" height="1024"/>
+        <image name="troopers2.png" width="29" height="68"/>
         <image name="volume.png" width="64" height="64"/>
         <image name="windu-chapter.jpg" width="300" height="303"/>
         <image name="yoda-chapter.png" width="512" height="512"/>
