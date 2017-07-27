@@ -18,7 +18,7 @@
         <!--View Menu-->
         <scene sceneID="a2J-vC-ORs">
             <objects>
-                <viewController id="aGL-Wu-W9B" customClass="ViewMenu" customModule="BeatTheJedi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aGL-Wu-W9B" customClass="ViewMenu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MDY-Ce-nmn"/>
                         <viewControllerLayoutGuide type="bottom" id="iEw-Bp-Pxc"/>
@@ -74,6 +74,15 @@
                                     <action selector="notavailable:" destination="aGL-Wu-W9B" eventType="touchUpInside" id="zOQ-oN-Jqn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="beat the jedi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNG-pg-cKO">
+                                <rect key="frame" x="39" y="203" width="297" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="4"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -114,7 +123,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="2TG-bP-Rv4" kind="show" id="Tit-p3-K0c"/>
+                                    <segue destination="aGL-Wu-W9B" kind="show" id="MrA-YG-zLb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD2-7a-qkd">
@@ -122,7 +131,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="yoda-chapter.png"/>
                                 <connections>
-                                    <segue destination="2TG-bP-Rv4" kind="show" id="ico-jJ-7Ai"/>
+                                    <segue destination="aGL-Wu-W9B" kind="show" id="kyb-pd-484"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-Io-4ZR">
@@ -139,7 +148,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="windu-chapter.jpg"/>
                                 <connections>
-                                    <segue destination="2TG-bP-Rv4" kind="show" id="NpO-Zv-muB"/>
+                                    <segue destination="aGL-Wu-W9B" kind="show" id="hqa-SD-Lnk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="quel jedi osez-vous affronter " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahJ-d3-Kw2">
@@ -157,23 +166,117 @@
             </objects>
             <point key="canvasLocation" x="2176.8000000000002" y="-223.53823088455775"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="6n9-Qe-GCT">
+        <!--Survie Game-->
+        <scene sceneID="EZQ-NX-5qm">
             <objects>
-                <viewController id="2TG-bP-Rv4" sceneMemberID="viewController">
+                <viewController id="qGb-eH-Xjy" customClass="SurvieGame" customModule="BeatTheJedi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pGb-Gq-x0G"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dl6-CH-D4A"/>
+                        <viewControllerLayoutGuide type="top" id="xMI-SF-m9h"/>
+                        <viewControllerLayoutGuide type="bottom" id="dJx-wA-Fjo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3SR-oU-e0K">
+                    <view key="view" contentMode="scaleToFill" id="vJm-4q-As0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ourship.png" translatesAutoresizingMaskIntoConstraints="NO" id="nFg-0Y-WJx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="troopers1.png" translatesAutoresizingMaskIntoConstraints="NO" id="M2E-am-tQ7">
+                                <rect key="frame" x="170" y="519" width="34" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDc-cW-DaJ">
+                                <rect key="frame" x="16" y="626" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ff-pw-kmB">
+                                <rect key="frame" x="103" y="626" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart3.png" translatesAutoresizingMaskIntoConstraints="NO" id="sRT-Zw-pmK">
+                                <rect key="frame" x="281" y="626" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="HPbar" destination="sRT-Zw-pmK" id="P5M-6X-fRv"/>
+                        <outlet property="Player" destination="M2E-am-tQ7" id="7lH-tu-62S"/>
+                        <outlet property="Score" destination="3Ff-pw-kmB" id="RX0-GD-pxX"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tLz-u9-nsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYE-wG-zaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3097" y="-224"/>
+            <point key="canvasLocation" x="3197.5999999999999" y="519.49025487256381"/>
+        </scene>
+        <!--Game Over-->
+        <scene sceneID="X8l-Ws-gl5">
+            <objects>
+                <viewController storyboardIdentifier="GameOver" id="jfw-0y-mvI" customClass="GameOver" customModule="BeatTheJedi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u4v-pQ-hLS"/>
+                        <viewControllerLayoutGuide type="bottom" id="CA4-vr-d25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e75-W7-IUv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shipbackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="eqE-HR-r5i">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sx-tO-z1C">
+                                <rect key="frame" x="0.0" y="528" width="375" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <state key="normal" title="revenir au menu principal">
+                                    <color key="titleColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aGL-Wu-W9B" kind="show" id="L1o-pG-4cM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="game over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0f-zg-ihG">
+                                <rect key="frame" x="16" y="234" width="343" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="44"/>
+                                <color key="textColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="7" height="5"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrR-5E-TfV">
+                                <rect key="frame" x="99" y="419" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4p-1E-onr">
+                                <rect key="frame" x="178" y="419" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="score" destination="t4p-1E-onr" id="TJ0-XE-Si5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgr-PL-AW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4138" y="520"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="trX-lq-p7G">
@@ -199,7 +302,7 @@
                                     <color key="titleColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wrX-yn-K3e" kind="show" id="r3i-Mw-hCw"/>
+                                    <segue destination="qGb-eH-Xjy" kind="show" id="RPe-l3-qDu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-ai-5He">
@@ -221,67 +324,20 @@
             </objects>
             <point key="canvasLocation" x="2176.8000000000002" y="520.38980509745136"/>
         </scene>
-        <!--Survie Game-->
-        <scene sceneID="2aY-fQ-6mG">
-            <objects>
-                <viewController id="wrX-yn-K3e" customClass="SurvieGame" customModule="BeatTheJedi" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bn8-lq-yl7"/>
-                        <viewControllerLayoutGuide type="bottom" id="3a3-qk-RrS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7bc-OQ-mMm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="troopers2.png" translatesAutoresizingMaskIntoConstraints="NO" id="u2q-ep-J9k">
-                                <rect key="frame" x="170" y="564" width="34" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5O-mJ-rYO">
-                                <rect key="frame" x="16" y="637" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt9-cS-c1E">
-                                <rect key="frame" x="95" y="636" width="39" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.84313725490000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart3.png" translatesAutoresizingMaskIntoConstraints="NO" id="4cT-eZ-8gb">
-                                <rect key="frame" x="283" y="636" width="76" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="HPbar" destination="4cT-eZ-8gb" id="Nyx-Oe-hpv"/>
-                        <outlet property="Player" destination="u2q-ep-J9k" id="puz-vo-uZC"/>
-                        <outlet property="Score" destination="Xt9-cS-c1E" id="jyJ-6K-xXV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JnI-ms-WvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3096.8000000000002" y="519.49025487256381"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Obi-Wan-chapter.png" width="512" height="512"/>
         <image name="heart3.png" width="495" height="133"/>
         <image name="histoire-menu.jpg" width="1080" height="1920"/>
+        <image name="ourship.png" width="177" height="335"/>
         <image name="shipbackground.jpeg" width="1242" height="2208"/>
         <image name="survivelink.png" width="576" height="1024"/>
-        <image name="troopers2.png" width="29" height="68"/>
+        <image name="troopers1.png" width="29" height="68"/>
         <image name="volume.png" width="64" height="64"/>
         <image name="windu-chapter.jpg" width="300" height="303"/>
         <image name="yoda-chapter.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ico-jJ-7Ai"/>
-        <segue reference="WKA-e4-w4O"/>
+        <segue reference="liA-ve-RvD"/>
     </inferredMetricsTieBreakers>
 </document>

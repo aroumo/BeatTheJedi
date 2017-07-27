@@ -26,10 +26,12 @@ class SurvieGame: UIViewController {
     var arraybull = [UIImageView]()
     var arrayenemy = [UIImageView]()
     var trooperimg = [UIImage]()
-    var enemyimg1 =  [UIImage(named: "Ennemies1.png")!, UIImage(named: "Ennemies2.png")!, UIImage(named: "Ennemies3.png")!]
-    var enemyimg2 =  [UIImage(named: "Ennemies4.png")!, UIImage(named: "Ennemies5.png")!, UIImage(named: "Ennemies6.png")!]
+    var enemyimg1 =  [UIImage(named: "Ennemies1.png")!, UIImage(named: "Ennemies2.png")!, UIImage(named: "Ennemies3.png")!, UIImage(named: "Ennemies2.png")!]
+    var enemyimg2 =  [UIImage(named: "Ennemies4.png")!, UIImage(named: "Ennemies5.png")!, UIImage(named: "Ennemies6.png")!, UIImage(named: "Ennemies5.png")!]
     var HP_img =  [UIImage(named: "heart1.png")!, UIImage(named: "heart2.png")!, UIImage(named: "heart3.png")!]
-    var playerscore: Int = 0
+    var Obiwan_img =  [UIImage(named: "WalkingObiWan1.png")!, UIImage(named: "ObiWan.png")!, UIImage(named: "WalkingObiWan2.png")!, UIImage(named: "ObiWan.png")!]
+    var MaceWindu_img =  [UIImage(named: "WalkingMaceWindu1.png")!, UIImage(named: "MaceWindu.png")!, UIImage(named: "WalkingMaceWindu2.png")!, UIImage(named: "MaceWindu.png")!]
+    var Yoda_img =  [UIImage(named: "Walking_Yoda1.png")!, UIImage(named: "Standing_Yoda.png")!, UIImage(named: "Walking_Yoda2.png")!, UIImage(named: "Standing_Yoda.png")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +40,6 @@ class SurvieGame: UIViewController {
         WalkingTrooper()
         makeBullet()
         makeEnemy()
-        timersurvive = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true, block: {(l:Timer) in
-            if (self.vitesse != 0) {
-            self.vitesse -= 0.002
-            }
-        })
     }
     
     @IBOutlet weak var Player: UIImageView!
@@ -85,7 +82,7 @@ class SurvieGame: UIViewController {
     
     
     func makeBullet() {
-        timecreatebull = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: {(l:Timer) in
+        timecreatebull = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: {(l:Timer) in
             self.Bullet()
             self.arraybull.forEach({(bullet: UIImageView) in
                 if (bullet.center.y <= self.view.frame.minY) {
@@ -122,7 +119,6 @@ class SurvieGame: UIViewController {
                 if (enemy.center.y <= self.view.frame.minY) {
                     self.arrayenemy.remove(at: self.arrayenemy.index(of : enemy)!)
                     enemy.removeFromSuperview()
-                    print("destroy")
                 }
             })
         })
@@ -133,21 +129,39 @@ class SurvieGame: UIViewController {
         let j = arc4random_uniform(UInt32(self.view.frame.maxX - 20))
         let k = arc4random_uniform(UInt32(100))
         var imgenemy = UIImage()
-        if (k <= 75) {
+        if (k <= 50) {
             imgenemy = UIImage(named: "Ennemies1.png")!
         }
-        else {
+        else if (k <= 85) {
             imgenemy = UIImage(named: "Ennemies4.png")!
+        }
+        else if (k <= 90) {
+            imgenemy = UIImage(named: "ObiWan.png")!
+        }
+        else if (k <= 95) {
+            imgenemy = UIImage(named: "MaceWindu.png")!
+        }
+        else {
+            imgenemy = UIImage(named: "Standing_Yoda.png")!
         }
         let enemy = UIImageView(image : imgenemy)
         enemy.frame = CGRect(x: Int(j), y: Int(self.view.frame.minY), width: 34, height: 80)
         enemy.contentMode = UIViewContentMode.scaleAspectFit
         view.addSubview(enemy)
-        if (k <= 75) {
+        if (k <= 50) {
             WalkingEnemy(enemy: enemy, choice: 0)
         }
-        else {
+        else if (k <= 85) {
             WalkingEnemy(enemy: enemy, choice: 1)
+        }
+        else if (k <= 90) {
+            WalkingEnemy(enemy: enemy, choice: 2)
+        }
+        else if (k <= 95) {
+            WalkingEnemy(enemy: enemy, choice: 3)
+        }
+        else {
+            WalkingEnemy(enemy: enemy, choice: 4)
         }
         arrayenemy += [enemy]
     }
@@ -162,17 +176,20 @@ class SurvieGame: UIViewController {
                         enemy.removeFromSuperview()
                         self.arraybull.remove(at: self.arraybull.index(of : bullet)!)
                         bullet.removeFromSuperview()
-                        self.playerscore += 5
-                        self.Score.text = String(self.playerscore)
+                        GameVariable.Status.score += 5
+                        self.Score.text = String(GameVariable.Status.score)
                     }
                 })
                 if (enemy.frame.intersects(self.Player.frame)) {
                     self.life -= 1
-                    self.HPbar.image = self.HP_img[self.life]
-                    self.arrayenemy.remove(at: self.arrayenemy.index(of : enemy)!)
-                    enemy.removeFromSuperview()
                     if (self.life == -1) {
-                        //GameOver()
+                        self.GameOver()
+                        self.life = 2
+                    }
+                    else {
+                        self.HPbar.image = self.HP_img[self.life]
+                        self.arrayenemy.remove(at: self.arrayenemy.index(of : enemy)!)
+                        enemy.removeFromSuperview()
                     }
                 }
             })
@@ -185,19 +202,52 @@ class SurvieGame: UIViewController {
             timeenwalk1 = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true, block: {(l:Timer) in
                 enemy.image = self.enemyimg1[i]
                 i += 1
-                if (i == 3) {
+                if (i == 4) {
+                    i = 0
+                }
+            })
+        }
+        else if (choice == 1) {
+            timeenwalk2 = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true, block: {(l:Timer) in
+                enemy.image = self.enemyimg2[i]
+                i += 1
+                if (i == 4) {
+                    i = 0
+                }
+            })
+        }
+        else if (choice == 2) {
+            timeenwalk2 = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true, block: {(l:Timer) in
+                enemy.image = self.Obiwan_img[i]
+                i += 1
+                if (i == 4) {
+                    i = 0
+                }
+            })
+        }
+        else if (choice == 3) {
+            timeenwalk2 = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true, block: {(l:Timer) in
+                enemy.image = self.MaceWindu_img[i]
+                i += 1
+                if (i == 4) {
                     i = 0
                 }
             })
         }
         else {
             timeenwalk2 = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true, block: {(l:Timer) in
-                enemy.image = self.enemyimg2[i]
+                enemy.image = self.Yoda_img[i]
                 i += 1
-                if (i == 3) {
+                if (i == 4) {
                     i = 0
                 }
             })
         }
+    }
+    
+    func GameOver() {
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "GameOver") as! GameOver!
+        self.navigationController?.pushViewController(secondViewController!, animated: true)
+        self.present(secondViewController!, animated: true)
     }
 }
