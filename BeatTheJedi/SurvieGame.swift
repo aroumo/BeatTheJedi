@@ -17,10 +17,18 @@ class SurvieGame: UIViewController {
     var timecreatebull: Timer!
     var timecreateene: Timer!
     var timertrooper: Timer!
+    var timersurvive: Timer!
     var timeennemy: Timer!
+    var timeenwalk1: Timer!
+    var timeenwalk2: Timer!
+    var vitesse: Double = 0.02
+    var life: Int = 2
     var arraybull = [UIImageView]()
     var arrayenemy = [UIImageView]()
     var trooperimg = [UIImage]()
+    var enemyimg1 =  [UIImage(named: "Ennemies1.png")!, UIImage(named: "Ennemies2.png")!, UIImage(named: "Ennemies3.png")!]
+    var enemyimg2 =  [UIImage(named: "Ennemies4.png")!, UIImage(named: "Ennemies5.png")!, UIImage(named: "Ennemies6.png")!]
+    var HP_img =  [UIImage(named: "heart1.png")!, UIImage(named: "heart2.png")!, UIImage(named: "heart3.png")!]
     var playerscore: Int = 0
     
     override func viewDidLoad() {
@@ -30,15 +38,22 @@ class SurvieGame: UIViewController {
         WalkingTrooper()
         makeBullet()
         makeEnemy()
+        timersurvive = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true, block: {(l:Timer) in
+            if (self.vitesse != 0) {
+            self.vitesse -= 0.002
+            }
+        })
     }
     
     @IBOutlet weak var Player: UIImageView!
     
     @IBOutlet weak var Score: UILabel!
     
+    @IBOutlet weak var HPbar: UIImageView!
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        var touch : UITouch! = touches.first!
+        let touch : UITouch! = touches.first!
         
         location = touch.location(in: self.view)
         
@@ -48,7 +63,7 @@ class SurvieGame: UIViewController {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        var touch : UITouch! = touches.first!
+        let touch : UITouch! = touches.first!
         
         location = touch.location(in: self.view)
         
@@ -107,6 +122,7 @@ class SurvieGame: UIViewController {
                 if (enemy.center.y <= self.view.frame.minY) {
                     self.arrayenemy.remove(at: self.arrayenemy.index(of : enemy)!)
                     enemy.removeFromSuperview()
+                    print("destroy")
                 }
             })
         })
@@ -114,18 +130,30 @@ class SurvieGame: UIViewController {
     }
     
     func Enemy() {
-        var j = arc4random_uniform(UInt32(self.view.frame.maxX))
-        let img = "Ennemies1.png"
-        let imgenemy = UIImage(named: img)
+        let j = arc4random_uniform(UInt32(self.view.frame.maxX - 20))
+        let k = arc4random_uniform(UInt32(100))
+        var imgenemy = UIImage()
+        if (k <= 75) {
+            imgenemy = UIImage(named: "Ennemies1.png")!
+        }
+        else {
+            imgenemy = UIImage(named: "Ennemies4.png")!
+        }
         let enemy = UIImageView(image : imgenemy)
-        enemy.frame = CGRect(x: Int(j), y: Int(self.view.frame.minY), width: 24, height: 60)
+        enemy.frame = CGRect(x: Int(j), y: Int(self.view.frame.minY), width: 34, height: 80)
         enemy.contentMode = UIViewContentMode.scaleAspectFit
         view.addSubview(enemy)
+        if (k <= 75) {
+            WalkingEnemy(enemy: enemy, choice: 0)
+        }
+        else {
+            WalkingEnemy(enemy: enemy, choice: 1)
+        }
         arrayenemy += [enemy]
     }
     
     func MoveEnemy() {
-        timeennemy = Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true, block: {(l:Timer) in
+        timeennemy = Timer.scheduledTimer(withTimeInterval: self.vitesse, repeats: true, block: {(l:Timer) in
             self.arrayenemy.forEach({(enemy: UIImageView) in
                 enemy.center.y = enemy.center.y + 1
                 self.arraybull.forEach({(bullet: UIImageView) in
@@ -138,7 +166,38 @@ class SurvieGame: UIViewController {
                         self.Score.text = String(self.playerscore)
                     }
                 })
+                if (enemy.frame.intersects(self.Player.frame)) {
+                    self.life -= 1
+                    self.HPbar.image = self.HP_img[self.life]
+                    self.arrayenemy.remove(at: self.arrayenemy.index(of : enemy)!)
+                    enemy.removeFromSuperview()
+                    if (self.life == -1) {
+                        //GameOver()
+                    }
+                }
             })
         })
+    }
+    
+    func WalkingEnemy(enemy: UIImageView, choice: Int) {
+        var i = 0
+        if (choice == 0) {
+            timeenwalk1 = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true, block: {(l:Timer) in
+                enemy.image = self.enemyimg1[i]
+                i += 1
+                if (i == 3) {
+                    i = 0
+                }
+            })
+        }
+        else {
+            timeenwalk2 = Timer.scheduledTimer(withTimeInterval: 0.15, repeats: true, block: {(l:Timer) in
+                enemy.image = self.enemyimg2[i]
+                i += 1
+                if (i == 3) {
+                    i = 0
+                }
+            })
+        }
     }
 }

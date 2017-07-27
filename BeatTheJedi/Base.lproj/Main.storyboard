@@ -142,7 +142,7 @@
                                     <segue destination="2TG-bP-Rv4" kind="show" id="NpO-Zv-muB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quel jedi osez-vous affronter " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahJ-d3-Kw2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="quel jedi osez-vous affronter " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahJ-d3-Kw2">
                                 <rect key="frame" x="16" y="570" width="343" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
@@ -251,10 +251,15 @@
                                 <color key="textColor" red="1" green="0.84313725490000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart3.png" translatesAutoresizingMaskIntoConstraints="NO" id="4cT-eZ-8gb">
+                                <rect key="frame" x="283" y="636" width="76" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="HPbar" destination="4cT-eZ-8gb" id="Nyx-Oe-hpv"/>
                         <outlet property="Player" destination="u2q-ep-J9k" id="puz-vo-uZC"/>
                         <outlet property="Score" destination="Xt9-cS-c1E" id="jyJ-6K-xXV"/>
                     </connections>
@@ -266,6 +271,7 @@
     </scenes>
     <resources>
         <image name="Obi-Wan-chapter.png" width="512" height="512"/>
+        <image name="heart3.png" width="495" height="133"/>
         <image name="histoire-menu.jpg" width="1080" height="1920"/>
         <image name="shipbackground.jpeg" width="1242" height="2208"/>
         <image name="survivelink.png" width="576" height="1024"/>
@@ -276,6 +282,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ico-jJ-7Ai"/>
-        <segue reference="liA-ve-RvD"/>
+        <segue reference="WKA-e4-w4O"/>
     </inferredMetricsTieBreakers>
 </document>
